@@ -1,5 +1,5 @@
 ---
 layout: post
-title: Video game regression project
+title: Regression_Project
 ---
-Insert stuff here.
+For my regression project I decided to analyze a data set that ranks video games by total sales to see if I could predict the sales of a video game. I chose to use the critic score, user score, ESRB rating, and genre of a given game to predict its total sales. Because the data set included many other variables, such as year, sales in specific regions, developer, publisher, and name of the game, I had to drop those variables in order to isolate the variables that I thought would be correlated to sales. Then, because the ESRB rating and the genre of a game are categorical variables, I created a one hot matrix of each variable and removed them from the original data-frame. I then did a correlation of each of the remaining variables with total sales, and saw that critic score was the most correlated. After creating a pair plot to visualize the data, I saw that the other numerical variables were exponentially correlated with the total sales, so I created a column in the data-frame that was the logarithm of total sales and dropped total sales from the data-frame. I created a new variable to store the logarithm of total sales, and then dropped log_total_sales from the main data-frame. After I isolated the numerical variables in the data-frame.
